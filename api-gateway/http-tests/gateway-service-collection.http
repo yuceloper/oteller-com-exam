@@ -1,0 +1,40 @@
+### Hotel List
+GET http://localhost:8080/hotel-service/api/hotels
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ5dWNlbG9wZXIiLCJpYXQiOjE3NDQ1ODM5OTIsImV4cCI6MTc0NDY3MDM5Mn0.AwrcC2PLQ_3ydl31F9KE8a74Pb6f3Fl9sdCINwnUiig
+
+### Add New Hotel
+POST http://localhost:8080/hotel-service/api/hotels
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ5dWNlbG9wZXIiLCJpYXQiOjE3NDQ1ODM5OTIsImV4cCI6MTc0NDY3MDM5Mn0.AwrcC2PLQ_3ydl31F9KE8a74Pb6f3Fl9sdCINwnUiig
+
+{
+  "name": "OtellerCom Otel 1",
+  "address": "oteller com yanı siyah sokak pembe otel",
+  "starRating": 1.0
+}
+
+### Get Rooms
+POST http://localhost:8080/hotel-service/api/rooms
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ5dWNlbG9wZXIiLCJpYXQiOjE3NDQ1ODM5OTIsImV4cCI6MTc0NDY3MDM5Mn0.AwrcC2PLQ_3ydl31F9KE8a74Pb6f3Fl9sdCINwnUiig
+
+{
+  "hotelId": 1
+}
+
+### New Reservation
+POST http://localhost:8080/hotel-service/api/reservations
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ5dWNlbG9wZXIiLCJpYXQiOjE3NDQ1ODM5OTIsImV4cCI6MTc0NDY3MDM5Mn0.AwrcC2PLQ_3ydl31F9KE8a74Pb6f3Fl9sdCINwnUiig
+
+{
+  "hotelId": 1,
+  "roomId": 4,
+  "guestName": "yuceloper",
+  "checkInDate": "2025-05-03",
+  "checkOutDate": "2025-05-04"
+}
+
+### My Reservations
+GET http://localhost:8080/hotel-service/api/reservations
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ5dWNlbG9wZXIiLCJpYXQiOjE3NDQ1ODM5OTIsImV4cCI6MTc0NDY3MDM5Mn0.AwrcC2PLQ_3ydl31F9KE8a74Pb6f3Fl9sdCINwnUiig

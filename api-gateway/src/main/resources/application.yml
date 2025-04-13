@@ -1,0 +1,32 @@
+spring:
+  cloud:
+    gateway:
+      forwarded:
+        enabled: true
+      httpclient:
+        wiretap: true
+      globalcors:
+        add-to-simple-url-handler-mapping: true
+        corsConfigurations:
+          '[/**]':
+            allowedHeaders: "*"
+            allowedOrigins: "*"
+            allowedMethods: "*"
+      routes:
+        - id: hotel-service
+          uri: http://localhost:8081
+          predicates:
+            - Path=/hotel-service/**
+
+        - id: auth-service
+          uri: http://localhost:8083
+          predicates:
+            - Path=/auth-service/**
+
+  application:
+    name: api-gateway
+server:
+  port: 8080
+
+jwt:
+  secret: 3f7d79a4db98b6e145c2aaff95f62d4a635bb5c507cf17b6e4099c8a773fadd2

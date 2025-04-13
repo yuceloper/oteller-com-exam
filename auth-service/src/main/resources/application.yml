@@ -1,0 +1,16 @@
+server:
+  port: 8083
+  servlet:
+    context-path: /auth-service
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/auth_db
+    username: postgres
+    password: yourpassword
+  jpa:
+    hibernate:
+      ddl-auto: create
+    show-sql: true
+
+jwt:
+  secret: 3f7d79a4db98b6e145c2aaff95f62d4a635bb5c507cf17b6e4099c8a773fadd2
