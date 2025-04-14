@@ -29,10 +29,6 @@ docker-compose up --build
 
 Bu rehber, IntelliJ IDEA içinde yer alan `.http` dosyası yardımıyla OtellerCom mikroservislerini nasıl test edebileceğinizi adım adım anlatmaktadır.
 
-# ⚠️ ÖNEMLİ UYARI
-
-**Zaman kısıtlı olduğu için ve testlerin sürdürülebilirliğini sağlamak adına validasyonlar basit tutulmuştur.**
-
 ---
 
 ## 🔧 Gereksinimler
