@@ -25,7 +25,7 @@ Bu proje, Spring Boot 3, Java 17, PostgreSQL, Kafka, Docker, JWT ve Spring Cloud
 docker-compose up --build
 
 ```
-# 🧪 OtellerCom API Test Rehberi (IntelliJ IDEA `.http` Dosyası Kullanımı)
+# OtellerCom API Test Rehberi (IntelliJ IDEA `.http` Dosyası Kullanımı)
 
 Bu rehber, IntelliJ IDEA içinde yer alan `.http` dosyası yardımıyla OtellerCom mikroservislerini nasıl test edebileceğinizi adım adım anlatmaktadır.
 
