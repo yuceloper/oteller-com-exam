@@ -31,16 +31,16 @@ Bu rehber, IntelliJ IDEA içinde yer alan `.http` dosyası yardımıyla OtellerC
 
 ---
 
-## 🔧 Gereksinimler
+## Gereksinimler
 
 - IntelliJ IDEA 
 - OtellerCom mikroservislerinin çalışıyor olması
 
-## 📁 gateway-service-http.http Dosyası Nedir?
+## gateway-service-http.http Dosyası Nedir?
 
 `gateway-service-http.http` dosyası, IntelliJ IDEA içerisinde doğrudan REST API isteklerini test etmenizi sağlar. Postman'e alternatif olarak bunu tercih ettim, yine de collection paylaşacağım.
 
-## ✅ Adım Adım Test Süreci
+## Adım Adım Test Süreci
 
 ### 1. Kullanıcı Kaydı
 
